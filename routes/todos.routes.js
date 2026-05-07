@@ -94,7 +94,7 @@ router.delete('/:id', async (req, res) => {
         
         console.log( error.message )
 
-        res.status( 400 ).json( { message: "Der er opstået en fejl - undskyld 😓" } )
+        res.status( 400 ).json( { message: "Der er opstået en fejl - undskyld 😓 " } )
 
     }
 
