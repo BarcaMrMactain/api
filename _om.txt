@@ -1,0 +1,23 @@
+Opbygning af server/API
+
+npm init -y
+
+npm i express
+
+lav server.js i roden
+   - udfyld med server-hejs
+
+Start serveren med: npm run start
+
+byg route
+
+npm i dotenv
+
+lav: env
+
+genstart automatisk ved save
+npm i nodemon --save-dev 
+
+// connection til db
+npm i mongoose
+
