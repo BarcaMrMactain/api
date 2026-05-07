@@ -9,17 +9,17 @@ const PORT = process.env.PORT || 5000  // vælg selv port
 
 // ---- DB Mongo connect
 // --------------------------------------------------------
-mongoose.connect("mongodb://localhost:27017/dataservice_db")
-.then( () => {
-    console.log("MongoDB: Forbundet 👍")
-} )
-.catch( (err) => {
-    console.log("MongoDB FEJL: ", err)
-} )
+// mongoose.connect("mongodb://localhost:27017/dataservice_db")
+// .then( () => {
+//     console.log("MongoDB: Forbundet 👍")
+// } )
+// .catch( (err) => {
+//     console.log("MongoDB FEJL: ", err)
+// } )
 
-const db = mongoose.connection
-db.on('error', (error) => { console.log("🔴 MongoDB runtime fejl:", error) } )
-db.once('open', (error) => { console.log("🟢 MongoDB connection åben") } )
+// const db = mongoose.connection
+// db.on('error', (error) => { console.log("🔴 MongoDB runtime fejl:", error) } )
+// db.once('open', (error) => { console.log("🟢 MongoDB connection åben") } )
 
 
 // GET: Servers endpoint - base-URL
